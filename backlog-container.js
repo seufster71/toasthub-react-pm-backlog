@@ -177,7 +177,7 @@ class PMBacklogContainer extends Component {
 				id = item.id;
 			}
 			fuLogger.log({level:'TRACE',loc:'BacklogContainer::onModify',msg:"test"+id});
-			this.props.actions.modifyItem(id);
+			this.props.actions.modifyItem({id,appPrefs:this.props.appPrefs});
 		};
 	}
 	
